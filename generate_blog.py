@@ -1,8 +1,5 @@
-import os
-import argparse
-from pathlib import Path
-import requests
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 API_URL = os.getenv("LLM_API_URL", "https://api.example-llm.com/v1/generate")
