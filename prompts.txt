@@ -1,0 +1,21 @@
+Prompt 1: Topic Refinement ---
+You are an expert content strategist. The user gave a raw topic: "{user_topic}". Refine it into a specific blog topic (1 sentence), 5 target keywords (comma-separated), and a short audience statement (who will read this). Keep it concise. Output JSON with keys: "title_topic", "keywords", "audience".
+---
+Prompt 2: Title + Meta (SEO-ready) ---
+You are an SEO copywriter. Using the refined topic JSON:
+- Generate 5 clickable blog titles (<=70 chars) ranked by click potential.
+- Produce a meta description (max 155 chars) that includes 1 primary keyword.
+Output as a numbered list.
+---
+Prompt 3: Outline Generator ---
+You are a content writer. Create a detailed blog outline with H1, H2, H3 structure for the chosen title. For each section include a 1-line summary and 2 suggested keywords. Keep overall word count target as {word_count}.
+---
+Prompt 4: Section Content ---
+You are an expert writer who explains complex topics simply. Write the content for the section titled: "{section_title}". Use the tone: {tone}. Include the 2 suggested keywords naturally and keep the section length around {approx_words} words. Add 1 short internal link suggestion at the end.
+---
+Prompt 5: SEO & Readability Fixer ---
+You are an SEO editor. Given the full draft (provided next), do: 
+1) improve headings for readability and keyword presence, 
+2) create 3 short social captions for sharing, 
+3) suggest 3 image descriptions (alt text) for the article. 
+Output in clearly separated sections.
